@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0; 
+    padding: 10px;
+    background-color: transparent;
+    font-family: 'GmarketSans', sans-serif;
+    overflow: hidden;
+}
+
+.list-container {
+    width: 100%;
+    display: none;
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+li {
+    display: flex;
+    align-items: center;
+    height: 48px; /* 줄 간격 고정 (정상적인 범위) */
+    margin-bottom: 4px;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 
+        -2px -2px 0 #000,  2px -2px 0 #000, 
+        -2px  2px 0 #000,  2px  2px 0 #000,
+         0px 2px 4px rgba(0,0,0,0.8);
+}
+
+.count {
+    color: #FFB2D1; 
+    min-width: 75px;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 32px; 
+    font-family: 'GmarketSans', sans-serif;
+    font-weight: 900;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+}
+
+.name {
+    font-size: 29px; /* 기본 크기 */
+    letter-spacing: -0.5px;
+    display: inline-block;
+}
+
+.new {
+    color: #FFFF00; 
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px; 
+    margin-left: 8px;
+    font-weight: 800; 
+    text-shadow: 
+        -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px  1px 0 #000, 1px  1px 0 #000;
+    flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="list-container" id="p1">
+    <ul>
+        <li><span class="count">44</span><span class="name-container"><span class="name">이라이라</span></span></li>
+        <li><span class="count">55</span><span class="name-container"><span class="name">삐삐</span></span></li>
+        <li><span class="count">77</span><span class="name-container"><span class="name">외모체크</span></span></li>
+        <li><span class="count">88</span><span class="name-container"><span class="name">만두</span></span></li>
+        <li><span class="count">99</span><span class="name-container"><span class="name">모찌</span></span></li>
+        <li><span class="count">103</span><span class="name-container"><span class="name">미국가있어</span></span></li>
+        <li><span class="count">104</span><span class="name-container"><span class="name">헤비머신건</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p2">
+    <ul>
+        <li><span class="count">105</span><span class="name-container"><span class="name">어떡하지</span></span></li>
+        <li><span class="count">106</span><span class="name-container"><span class="name">코코로</span></span></li>
+        <li><span class="count">107</span><span class="name-container"><span class="name">냥</span></span></li>
+        <li><span class="count">109</span><span class="name-container"><span class="name">치명적</span></span></li>
+        <li><span class="count">110</span><span class="name-container"><span class="name">햄토리</span></span></li>
+        <li><span class="count">111</span><span class="name-container"><span class="name">A</span></span></li>
+        <li><span class="count">112</span><span class="name-container"><span class="name">도레미파</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p3">
+    <ul>
+        <li><span class="count">114</span><span class="name-container"><span class="name">이게사랑이지뭐야</span></span></li>
+        <li><span class="count">116</span><span class="name-container"><span class="name">카리나</span></span></li>
+        <li><span class="count">118</span><span class="name-container"><span class="name">핸즈업</span></span></li>
+        <li><span class="count">119</span><span class="name-container"><span class="name">콩나물</span></span></li>
+        <li><span class="count">120</span><span class="name-container"><span class="name">SIGN</span></span></li>
+        <li><span class="count">121</span><span class="name-container"><span class="name">Sea of love</span></span></li>
+        <li><span class="count">122</span><span class="name-container"><span class="name">Gravity</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p4">
+    <ul>
+        <li><span class="count">123</span><span class="name-container"><span class="name">체온</span></span></li>
+        <li><span class="count">124</span><span class="name-container"><span class="name">역도</span></span></li>
+        <li><span class="count">125</span><span class="name-container"><span class="name">클락션</span></span></li>
+        <li><span class="count">126</span><span class="name-container"><span class="name">날라리</span></span></li>
+        <li><span class="count">127</span><span class="name-container"><span class="name">리치맨</span></span></li>
+        <li><span class="count">129</span><span class="name-container"><span class="name">우치다</span></span></li>
+        <li><span class="count">130</span><span class="name-container"><span class="name">스키</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p5">
+    <ul>
+        <li><span class="count">132</span><span class="name-container"><span class="name">ASAP</span></span></li>
+        <li><span class="count">133</span><span class="name-container"><span class="name">슈퍼 그럼요</span></span></li>
+        <li><span class="count">134</span><span class="name-container"><span class="name">Balloon in Love</span></span></li>
+        <li><span class="count">135</span><span class="name-container"><span class="name">청바지</span></span></li>
+        <li><span class="count">137</span><span class="name-container"><span class="name">푸른 산호초</span></span></li>
+        <li><span class="count">145</span><span class="name-container"><span class="name">너 모지</span></span></li>
+        <li><span class="count">146</span><span class="name-container"><span class="name">포켓로켓</span><span class="new">New</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p6">
+    <ul>
+        <li><span class="count">147</span><span class="name-container"><span class="name">제니</span></span></li>
+        <li><span class="count">151</span><span class="name-container"><span class="name">Girls Never Die</span></span></li>
+        <li><span class="count">153</span><span class="name-container"><span class="name">바니</span></span></li>
+        <li><span class="count">155</span><span class="name-container"><span class="name">너 하나밖에 안 보여</span></span></li>
+        <li><span class="count">169</span><span class="name-container"><span class="name">왓더퍽</span></span></li>
+        <li><span class="count">175</span><span class="name-container"><span class="name">고민중독</span></span></li>
+        <li><span class="count">185</span><span class="name-container"><span class="name">계엄령</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p7">
+    <ul>
+        <li><span class="count">188</span><span class="name-container"><span class="name">스파게티</span></span></li>
+        <li><span class="count">191</span><span class="name-container"><span class="name">간바레 센빠이</span></span></li>
+        <li><span class="count">192</span><span class="name-container"><span class="name">이루리</span></span></li>
+        <li><span class="count">199</span><span class="name-container"><span class="name">샤넬</span><span class="new">New</span></span></li>
+        <li><span class="count">200</span><span class="name-container"><span class="name">I Want You</span></span></li>
+        <li><span class="count">202</span><span class="name-container"><span class="name">아파트</span></span></li>
+        <li><span class="count">210</span><span class="name-container"><span class="name">Strawberry Rush</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p8">
+    <ul>
+        <li><span class="count">215</span><span class="name-container"><span class="name">오빠 바이러스</span></span></li>
+        <li><span class="count">222</span><span class="name-container"><span class="name">주차</span></span></li>
+        <li><span class="count">235</span><span class="name-container"><span class="name">아헤가오</span></span></li>
+        <li><span class="count">242</span><span class="name-container"><span class="name">라라리라라</span></span></li>
+        <li><span class="count">252</span><span class="name-container"><span class="name">어마어마해</span></span></li>
+        <li><span class="count">266</span><span class="name-container"><span class="name">붐붐베이스</span></span></li>
+        <li><span class="count">279</span><span class="name-container"><span class="name">두번째 지구</span><span class="new">New</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p9">
+    <ul>
+        <li><span class="count">280</span><span class="name-container"><span class="name">욕 날라리</span></span></li>
+        <li><span class="count">281</span><span class="name-container"><span class="name">우유</span></span></li>
+        <li><span class="count">284</span><span class="name-container"><span class="name">운재쿤 응원가</span></span></li>
+        <li><span class="count">300</span><span class="name-container"><span class="name">한마디</span></span></li>
+        <li><span class="count">333</span><span class="name-container"><span class="name">나니가 스키</span></span></li>
+        <li><span class="count">373</span><span class="name-container"><span class="name">edm</span></span></li>
+        <li><span class="count">400</span><span class="name-container"><span class="name">드라군</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p10">
+    <ul>
+        <li><span class="count">444</span><span class="name-container"><span class="name">lost control</span></span></li>
+        <li><span class="count">500</span><span class="name-container"><span class="name">런던</span></span></li>
+        <li><span class="count">505</span><span class="name-container"><span class="name">Ocean</span></span></li>
+        <li><span class="count">1000</span><span class="name-container"><span class="name">쥬스</span></span></li>
+        <li><span class="count">1001</span><span class="name-container"><span class="name">와인</span></span></li>
+        <li><span class="count">1010</span><span class="name-container"><span class="name">마티니</span></span></li>
+        <li><span class="count">1011</span><span class="name-container"><span class="name">즈증까망</span><span class="new">New</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p11">
+    <ul>
+        <li><span class="count">1033</span><span class="name-container"><span class="name">레코드</span></span></li>
+        <li><span class="count">1040</span><span class="name-container"><span class="name">사계각가</span></span></li>
+        <li><span class="count">1074</span><span class="name-container"><span class="name">golden</span></span></li>
+        <li><span class="count">1084</span><span class="name-container"><span class="name">Love Me Like You</span></span></li>
+        <li><span class="count">1099</span><span class="name-container"><span class="name">1995</span></span></li>
+        <li><span class="count">1155</span><span class="name-container"><span class="name">제비용사</span></span></li>
+        <li><span class="count">1200</span><span class="name-container"><span class="name">사탕도둑</span></span></li>
+    </ul>
+</div>
+
+<div class="list-container" id="p12">
+    <ul>
+        <li><span class="count">1300</span><span class="name-container"><span class="name">윌유러브미</span></span></li>
+        <li><span class="count">1577</span><span class="name-container"><span class="name">팀진우</span></span></li>
+        <li><span class="count">2000</span><span class="name-container"><span class="name">캡틴잭</span></span></li>
+        <li><span class="count">3000</span><span class="name-container"><span class="name">We are</span><span class="new">New</span></span></li>
+    </ul>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const pages = document.querySelectorAll('.list-container');
+    let current = 0;
+    pages[0].style.display = 'block';
+
+    setInterval(() => {
+        pages[current].style.display = 'none';
+        current = (current + 1) % pages.length;
+        pages[current].style.display = 'block';
+    }, 8000);
+
+    // 글자 수에 따라 폰트 크기를 자연스럽게 비례 조절하는 로직
+    const names = document.querySelectorAll('.name');
+    names.forEach(name => {
+        const text = name.textContent;
+        const len = text.length;
+        
+        if (len > 12) {
+            name.style.fontSize = '18px';
+            name.style.letterSpacing = '-1px';
+        } else if (len > 9) {
+            name.style.fontSize = '21px';
+            name.style.letterSpacing = '-0.8px';
+        } else if (len > 7) {
+            name.style.fontSize = '24px';
+        } else if (len > 5) {
+            name.style.fontSize = '27px';
+        }
+        
+        // 영문 시그(Sea of love 등) 가로 폭 대응
+        if(/[a-zA-Z]/.test(text) && len > 8) {
+            name.style.letterSpacing = '-1.2px';
+        }
+    });
+});
+</script>
+</body>
+</html>
